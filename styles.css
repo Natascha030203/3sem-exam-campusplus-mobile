@@ -232,3 +232,39 @@ button:hover {
     justify-content: center;
 }
 /*-----------------------------------------------------------*/
+
+
+
+
+/*------------CSS for homepage------------CSS for homepage-------------------CSS for homepage----------------------*/
+
+
+
+.row {
+    position: fixed; /* Gør elementet fast placeret i bunden */
+    bottom: 0; /* Placer det ved bunden */
+    left: 0;
+    width: 100%; /* Strækker sig over hele bredden */
+    display: flex; /* Arranger elementerne i en række */
+    justify-content: space-around; /* Giver jævn fordeling mellem billeder */
+    background-color: #1A1A2E; /* Baggrundsfarve for området */
+    padding: 10px 0; /* Tilføjer lidt afstand omkring billederne */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
+}
+
+/* Styling til billederne */
+.billeder img {
+    width: 90px; /* Fast bredde for billederne */
+    height: auto; /* Bevarer proportionerne */
+    border-radius: 10px; /* Bløde kanter */
+    transition: transform 0.2s; /* Hover-animation */
+}
+
+.billeder img:hover {
+    transform: scale(1.1); /* Forstør billedet lidt ved hover */
+}
+
+/* Fjerner understregning på links */
+.billeder a {
+    text-decoration: none;
+}
