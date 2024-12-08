@@ -1,0 +1,150 @@
+/*------------------------------------CSS for forsiden/index-----------------------------------*/
+#velkommen{
+    font-size: 45px;
+    color: #8692B0;
+    text-align-last: right; /*Denne gør at det sidste i teksten bliver rykket til højre = campus+ rykkes*/
+    font-family: "Oxygen", sans-serif;
+}
+
+
+#forsidebillede{
+    width: 80vw;
+    height: 55vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 31vw;
+}
+
+.større-tekst{
+    font-size: 50px;
+}
+
+#årets{
+    font-size: 45px;
+    color: #8692B0;
+    text-align: right;
+    font-family: "Oxygen", sans-serif;
+}
+
+.left{
+    display: block; /* Holder denne del af tekste på en separat linje */
+    text-align: left; /* Tvinger den til venstre */
+    font-size: 45px;
+    margin-left: 3vw;
+
+}
+
+.stor-tekst{
+    font-size: 50px;
+    display: block; /*denne gør at de er hver si block */
+    margin-right: 7vw;
+}
+
+.stor-tekst1{
+    font-size: 50px;
+    display: block; /*denne gør at de er hver si block */
+    margin-right: 2vw;
+}
+
+#logind{
+    font-size: 20px;
+    color: #8692B0;
+    background-color: #1A1A2E;
+    padding: 4vw 16vw;
+    border-radius: 40px;
+    border: 1px solid #E9445F;
+    position: absolute;
+    left: 22vw;
+    bottom: 10vw;
+    text-decoration: none;
+    font-family: "Oxygen", sans-serif;
+}
+
+/*-----CSS for logind siden-----------------CSS for logind siden----------------CSS for logind siden------------------*/
+
+
+#overskrift2{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin-top: -2vw;
+    font-family: "Oxygen", sans-serif;
+}
+
+#log{
+    color: white;
+    font-size: 40px;
+    font-family: "Oxygen", sans-serif;
+    padding-left: 25px;
+}
+
+
+
+/*nedenstående er blevet udarbejdet ved brug at w3schools og AI, samt egent viden - link: https://www.w3schools.com/howto/howto_css_login_form_navbar.asp*/
+
+.topnav {
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+
+}
+
+
+.login-container {
+    max-width: 300px;
+    width: 100%;
+    background-color: #1A1A2E;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Ændrer layoutet til at være vertikalt/oven på hinanden */
+}
+
+label {
+    margin-bottom: 10px;
+
+}
+
+input[type="text"] {
+    width: 100%; /* Gør inputfelterne bredere */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #5d6e9a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #1A1A2E;
+    color: white;
+}
+
+button {
+    background-color: #8692b0;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+button:hover {
+    background-color: #D83349; /* En lidt mørkere farve for at indikere hover-effekt */
+}
+
+
+/* -------------------------*/
+
+
+#opret{
+    text-decoration: none;
+    margin-left: 60px;
+    color: #8692B0;
+}
+
+.stor-tekst2{
+   color: #E9445F;
+}
