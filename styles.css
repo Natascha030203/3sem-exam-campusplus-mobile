@@ -95,7 +95,7 @@
     max-width: 300px;
     width: 100%;
     background-color: #1A1A2E;
-    border-radius: 10px;
+    border-radius: 40px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -114,7 +114,7 @@ input[type="text"] {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #5d6e9a;
-    border-radius: 5px;
+    border-radius: 40px;
     margin-bottom: 10px;
     background-color: #1A1A2E;
     color: white;
@@ -125,7 +125,7 @@ button {
     color: white;
     padding: 15px;
     border: none;
-    border-radius: 5px;
+    border-radius: 40px;
     cursor: pointer;
     font-size: 16px;
     margin-left: 20px;
@@ -145,6 +145,90 @@ button:hover {
     color: #8692B0;
 }
 
+.opret{
+    margin-top: 10px;
+}
+
 .stor-tekst2{
    color: #E9445F;
 }
+
+/*--------CSS for opret-----------------CSS for opret----------------------------cSS for opret-----------------*/
+
+
+
+#bruger{
+    color: white;
+    font-size: 40px;
+    font-family: "Oxygen", sans-serif;
+    padding-left: 25px;
+}
+/*nedenstående er blevet udarbejdet ved brug at w3schools og AI, samt egent viden - link: https://www.w3schools.com/howto/howto_css_signup_form.asp*/
+
+
+.signup-form {
+    max-width: 400px;
+    background-color: #1A1A2E;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: auto;
+}
+
+.signup-form h1 {
+    color: #8692B0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.signup-form hr {
+    border: 0;
+    height: 1px;
+    background: #8692B0;
+    margin: 10px 0 20px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #5d6e9a;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    background-color: #1A1A2E; /* Baggrundsfarve for inputfelter */
+    color: white;
+}
+
+.signup-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.signup-form button {
+    background-color: #8692B0;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Gør knappen bred */
+    margin-top: 10px;
+}
+
+.signup-form button:hover {
+    background-color: #D83349; /* Hover-effekt */
+}
+
+.signup-form .clearfix {
+    display: flex;
+    justify-content: center;
+}
+/*-----------------------------------------------------------*/
