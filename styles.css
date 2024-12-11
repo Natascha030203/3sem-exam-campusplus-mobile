@@ -53,7 +53,7 @@
     background-color: #1A1A2E;
     padding: 4vw 16vw;
     border-radius: 40px;
-    border: 1px solid #E9445F;
+    border: 1px solid #e9445f;
     position: absolute;
     left: 22vw;
     bottom: 10vw;
@@ -132,7 +132,7 @@ button {
 }
 
 button:hover {
-    background-color: #D83349; /* En lidt mørkere farve for at indikere hover-effekt */
+    background-color: #e9445f; /* En lidt mørkere farve for at indikere hover-effekt */
 }
 
 
@@ -150,7 +150,7 @@ button:hover {
 }
 
 .stor-tekst2{
-   color: #E9445F;
+   color: #e9445f;
 }
 
 /*--------CSS for opret-----------------CSS for opret----------------------------cSS for opret-----------------*/
@@ -224,7 +224,7 @@ button:hover {
 }
 
 .signup-form button:hover {
-    background-color: #D83349; /* Hover-effekt */
+    background-color: #e9445f; /* Hover-effekt */
 }
 
 .signup-form .clearfix {
@@ -237,8 +237,72 @@ button:hover {
 
 
 /*------------CSS for homepage------------CSS for homepage-------------------CSS for homepage----------------------*/
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Tre kolonner */
+    grid-template-rows: repeat(2, auto); /* To rækker, hvor den første række har to knapper, og den næste har tre */
+    gap: 20px; /* Mellemrum mellem knapperne */
+    justify-items: center; /* Center knapperne horisontalt */
+    max-width: 900px; /* Begræns bredden for at holde det kompakt */
+    margin-top: 80px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Fjern understregning */
+    color: white; /* Tekstfarve */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px; /* Indre afstand */
+    border-radius: 20px; /* Rundede hjørner */
+    transition: transform 0.2s, background-color 0.3s;
+}
 
 
+/* Farver til knapperne */
+.mad {
+    background-color: #8692B0; /* Lyseblå */
+    width: 130px; /* Fast bredde */
+    height: 140px; /* Fast højde */
+}
+
+.stand {
+    background-color: #1D3557; /* Mørkeblå */
+    width: 130px; /* Fast bredde */
+    height: 160px; /* Fast højde */
+}
+
+.stempler {
+    background-color: #5d6e9a; /* Mørkere blågrå */
+    width: 140px; /* Fast bredde */
+    height: 50px; /* Fast højde */
+}
+
+.evaluering {
+    background-color: #4678b6; /* Blå */
+    width: 140px; /* Fast bredde */
+    height: 90px; /* Fast højde */
+    margin-top: -95px;
+}
+
+.forum {
+    background-color: #e9445f; /* Rød */
+    width: 140px; /* Fast bredde */
+    height: 180px; /* Fast højde */
+    margin-top: -170px;
+}
+
+/* Hover-effekt */
+.button:hover {
+    transform: scale(1.05); /* Lidt større */
+    opacity: 0.9; /* Gennemsigtighed */
+}
+
+
+/*her styles de 3 ikoner som man kan trykke på*/
 
 .row {
     position: fixed; /* Gør elementet fast placeret i bunden */
@@ -252,9 +316,10 @@ button:hover {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
 }
 
+
 /* Styling til billederne */
 .billeder img {
-    width: 90px; /* Fast bredde for billederne */
+    width: 90%; /* Fast bredde for billederne */
     height: auto; /* Bevarer proportionerne */
     border-radius: 10px; /* Bløde kanter */
     transition: transform 0.2s; /* Hover-animation */
@@ -268,3 +333,182 @@ button:hover {
 .billeder a {
     text-decoration: none;
 }
+
+
+/*------------CSS for madogkaffe ------------CSS for madogkaffe-------------------CSS for madogkaffe ----------------------*/
+
+#madogkaffe{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+
+
+#madbillet {
+    display: flex; /* Gør knappen til en flex-container */
+    align-items: center; /* Center tekst og billede vertikalt */
+    color: white; /* Tekstfarve */
+    background-color: #e9445f;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px; /* Indre afstand */
+    border-radius: 20px; /* Rundede hjørner */
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    margin-top: 80px;
+    gap: 70px; /* Mellemrum mellem tekst og billede */
+}
+
+.knap-billede {
+    width: 25vw; /* Justér billedstørrelse */
+    height: auto; /* Bevar proportioner */
+    order: 1; /* Sørger for, at billedet vises efter teksten */
+}
+
+
+
+#kaffebillet{
+    display: flex; /* Gør knappen til en flex-container */
+    align-items: center; /* Center tekst og billede vertikalt */
+    color: white; /* Tekstfarve */
+    background-color: #4678b6;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px; /* Indre afstand */
+    border-radius: 20px; /* Rundede hjørner */
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    margin-top: 70vw;
+    gap: 89px; /* Mellemrum mellem tekst og billede */
+}
+.knap-billede1{
+    width: 20vw; /* Justér billedstørrelse */
+    height: auto; /* Bevar proportioner */
+    order: 1; /* Sørger for, at billedet vises efter teksten */
+}
+
+
+.row1 {
+    position: fixed; /* Gør elementet fast placeret i bunden */
+    bottom: 0; /* Placer det ved bunden */
+    left: 0;
+    width: 100%; /* Strækker sig over hele bredden */
+    display: flex; /* Arranger elementerne i en række */
+    justify-content: space-around; /* Giver jævn fordeling mellem billeder */
+    background-color: #8692b0; /* Baggrundsfarve for området */
+    padding: 10px 0; /* Tilføjer lidt afstand omkring billederne */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
+}
+
+
+/*----------css for madbillet---------------------css for madbillet------------------css for mad billet--------*/
+
+
+#madbilletten{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+#maden{
+    width: 96vw;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+#noodles{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.madbillet {
+    margin-left: 12vw;
+    margin-top: 10vw;
+}
+
+
+#indlos-knap {
+    background-color: #8692b0;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 16px 90px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#indlos-knap:hover {
+    background-color: #5d6e9a;
+}
+
+#indlos-knap.indlost {
+    background-color: #103461;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+
+.row2{
+    position: fixed; /* Gør elementet fast placeret i bunden */
+    bottom: 0; /* Placer det ved bunden */
+    left: 0;
+    width: 100%; /* Strækker sig over hele bredden */
+    display: flex; /* Arranger elementerne i en række */
+    justify-content: space-around; /* Giver jævn fordeling mellem billeder */
+    background-color: #e9445f; /* Baggrundsfarve for området */
+    padding: 10px 0; /* Tilføjer lidt afstand omkring billederne */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
+}
+
+
+
+/*------------CSS for kaffebillet-------------CSS for kafebillet___________CSS for kaffebillet_________*/
+
+
+#kaffebilletten{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+
+.row3{
+    position: fixed; /* Gør elementet fast placeret i bunden */
+    bottom: 0; /* Placer det ved bunden */
+    left: 0;
+    width: 100%; /* Strækker sig over hele bredden */
+    display: flex; /* Arranger elementerne i en række */
+    justify-content: space-around; /* Giver jævn fordeling mellem billeder */
+    background-color: #4678b6; /* Baggrundsfarve for området */
+    padding: 10px 0; /* Tilføjer lidt afstand omkring billederne */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
+}
+
+
+#kaffen{
+    width: 96vw;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+#kaffe{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+
+/*-----------CSS for forum-----------CSS for forum-------------------------CSS for forum----------*/
+
+#forum{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+

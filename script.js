@@ -7,3 +7,19 @@ document.querySelector('.signup-form').addEventListener('submit', function(event
     alert('Adgangskoderne matcher ikke!');
 }
 });
+
+
+function indlosBilletten() {
+    const knap = document.getElementById('indlos-knap');
+    knap.textContent = 'Indløst'; // Skift tekst på knappen
+    knap.classList.add('indlost'); // Tilføj ny styling
+    knap.disabled = true; // Deaktiver knappen
+    alert('Billetten er nu indløst!'); // Valgfri pop-up besked
+}
+
+
+
+
+
+
+
