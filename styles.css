@@ -302,8 +302,6 @@ button:hover {
 }
 
 
-/*her styles de 3 ikoner som man kan trykke på*/
-
 .row {
     position: fixed; /* Gør elementet fast placeret i bunden */
     bottom: 0; /* Placer det ved bunden */
@@ -512,3 +510,83 @@ button:hover {
     text-align: center;
 }
 
+/*------------------CSS for stempler---------------CSS for stempler-------------------------CSS for stempler----------*/
+
+
+#stemplerne{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Container for dropdowns */
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 240px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    opacity: 0.8;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px;
+    width: 68vw;
+    height: 70vw;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p, .dropdown-content img {
+    margin: 0;
+    padding: 0;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover, .dropdown-content img:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+.row4{
+    position: fixed; /* Gør elementet fast placeret i bunden */
+    bottom: 0; /* Placer det ved bunden */
+    left: 0;
+    width: 100%; /* Strækker sig over hele bredden */
+    display: flex; /* Arranger elementerne i en række */
+    justify-content: space-around; /* Giver jævn fordeling mellem billeder */
+    background-color: #5D6E9A; /* Baggrundsfarve for området */
+    padding: 10px 0; /* Tilføjer lidt afstand omkring billederne */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
+}
