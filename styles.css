@@ -510,6 +510,8 @@ button:hover {
     text-align: center;
 }
 
+
+
 /*------------------CSS for stempler---------------CSS for stempler-------------------------CSS for stempler----------*/
 
 
@@ -519,6 +521,10 @@ button:hover {
     text-align: center;
 }
 
+
+.qr{
+    width: 68vw;
+}
 
 /* Container for dropdowns */
 .dropdown-container {
@@ -561,7 +567,7 @@ button:hover {
     z-index: 1;
     padding: 8px;
     width: 68vw;
-    height: 70vw;
+    height: 80vw;
 }
 
 /* Links inside the dropdown */
@@ -590,3 +596,221 @@ button:hover {
     padding: 10px 0; /* Tilføjer lidt afstand omkring billederne */
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
 }
+
+
+
+
+/* Spørgsmål */
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.question {
+    background-color: #4678B6;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Knappen til spørgsmål */
+.submit-question {
+    background-color: #d92027;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background-color: #3a3a6e;
+    padding: 15px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 320px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+}
+
+.submit-comment {
+    width: 100%;
+    background-color: #d92027;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*------------------CSS for din stand---------------CSS for din stand----------------------CSS for din stand-------*/
+
+
+#dinstand{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+
+.farve{
+    color: white;
+}
+
+.fælles{
+    width: 300px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #000000 !important;
+
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #103461 !important; /* Ændrer baggrundsfarven til lys blå */
+}
+
+#ønsker{
+    color: white;
+}
+
+.radio-form {
+    flex-direction: column;
+    gap: 10px; /* Afstand mellem valgmuligheder */
+    color: white;
+}
+
+.radio-item {
+    align-items: center;
+    gap: 10px; /* Afstand mellem knap og label */
+    color: white;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold; /* Fremhæv valgt label */
+    color: #007bff;    /* Skift farve på valgt tekst */
+}
+
+
+
+/*--------------------------her styles de farvede knapper i din stand----------------*/
+
+
+#standplacering{
+    color: white;
+    margin-top: 10vw;
+}
+
+/* Stil formularen */
+.radio-form {
+    display: flex;               /* Brug flexbox layout */
+    flex-wrap: wrap;             /* Gør det muligt for bokse at placere sig horisontalt på tværs */
+    gap: 10px;                   /* Afstand mellem bokse */
+}
+
+/* Skjul de faktiske radioknapper */
+.radio-item input[type="radio"] {
+    display: none;
+
+}
+
+/* Stil farvebokse */
+.radio-item .color-box {
+    width: 50px;                 /* Boksens bredde */
+    height: 50px;                /* Boksens højde */
+    display: inline-block;       /* Brug inline-block for at lave dem liggende */
+    border: 1px solid black;     /* Sort kant */
+    border-radius: 30px;         /* Runde hjørner */
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease; /* Animation ved hover */
+}
+
+/* Hover-effekt */
+.color-box:hover {
+    transform: scale(1.1);       /* Forstør lidt ved hover */
+}
+
+/* Markér valgt farve */
+input[type="radio"]:checked + .color-box {
+    border: 3px solid black;     /* Tykkere kant for valgt farve */
+}
+
+.icon{
+    width: 70vw;
+    margin-left: 20vw;
+    margin-top: -95vw;
+}
+
+
+/*--------css for restende spørgsmål-----------css for restende spørgsmål--------------*/
+#strøm{
+    color: white;
+    margin-top: 10vw;
+}
+
+.radio-formm {
+    flex-direction: column;
+    gap: 10px; /* Afstand mellem valgmuligheder */
+    color: white;
+    padding-bottom: 10vw;
+}
+
+.radio-itemm {
+    align-items: center;
+    gap: 10px; /* Afstand mellem knap og label */
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold; /* Fremhæv valgt label */
+    color: #007bff;    /* Skift farve på valgt tekst */
+}
+
+/* Skjul de faktiske radioknapper */
+.radio-itemm input[type="radio"] {
+    display: none;
+}
+
+#afstand{
+    padding-bottom: 40vw;
+}
+

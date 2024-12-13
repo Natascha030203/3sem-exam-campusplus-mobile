@@ -44,3 +44,61 @@ window.onclick = function(event) {
         }
     }
 }
+
+
+
+function toggleFrokostSpørgsmål(radioElement) {
+    var frokostSpørgsmål = document.getElementById('frokost-spørgsmål');
+    if (radioElement.value === 'Ja') {
+        frokostSpørgsmål.style.display = 'block';
+    } else {
+        frokostSpørgsmål.style.display = 'none';
+    }
+}
+
+
+
+
+
+
+
+
+document.getElementById('gemKnapp').addEventListener('click', gemData);
+
+function gemData() {
+    // Hent værdier fra input-felter
+    const vname = document.getElementById('vname').value;
+    const kontakt = document.getElementById('kontakt').value;
+    const stande = document.getElementById('stande').value;
+    const standholdere = document.getElementById('standholdere').value;
+    const frokostSvar = document.querySelector('input[name="svar"]:checked').value;
+    const frokostAntal = document.getElementById('antal').value;
+    const farveValg = document.querySelector('input[name="svar"]:checked').value;
+    const strømSvar = document.querySelector('input[name="svarr"]:checked').value;
+    const beskrivStand = document.getElementById('beskriv').value;
+    const aktivitet = document.getElementById('aktivitet').value;
+
+    // Gem data (fx i lokal storage eller en database)
+    const formData = {
+        vname,
+        kontakt,
+        stande,
+        standholdere,
+        frokostSvar,
+        frokostAntal,
+        farveValg,
+        strømSvar,
+        beskrivStand,
+        aktivitet
+    };
+
+    // Gem data i lokal storage (eksempel)
+    localStorage.setItem('formData', JSON.stringify(formData));
+
+    alert('Data gemt!');
+}
+
+
+
+
+

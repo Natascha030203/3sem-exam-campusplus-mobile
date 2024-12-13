@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Merriweather+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+  <title>Dinstand</title>
+  <script src="script.js"></script>
+
+  <style>
+    body {
+      font-family: 'Oxygen', sans-serif; /* Bruger fonten Oxygen som standard */
+    }
+  </style>
+
+</head>
+
+<body style="background-color:#103461;">
+
+
+<h1 id="overskrift2">Campus+</h1>
+
+<h2 id="dinstand"> Din stand</h2>
+
+
+
+<form id="standForm">
+  <label class="farve" for="vname">Navn på virksomhed/uddannelse/forening:</label><br>
+  <input type="text" id="vname" name="vname" class="fælles"><br>
+
+  <label class="farve" for="kontakt">Kontaktoplysninger på tilmelder/ansvarlig for standen:</label><br>
+  <input type="text" id="kontakt" name="kontakt" class="fælles"><br>
+
+  <label class="farve" for="stande">Hvor mange standpladser skal de bruge?:</label><br>
+  <input type="text" id="stande" name="stande" class="fælles"><br>
+
+  <label class="farve" for="antal">Antal standholdere?:</label><br>
+  <input type="text" id="standholdere" name="standholdere" class="fælles"><br>
+
+  <p id="ønsker">Ønske om frokost og hvor mange?</p>
+  <form class="radio-form">
+    <div class="radio-item">
+      <input type="radio" id="ja" name="svar" value="Ja" onclick="toggleFrokostSpørgsmål(this)">
+      <label for="ja">Ja</label>
+    </div>
+    <div class="radio-item">
+      <input type="radio" id="nej" name="svar" value="Nej" onclick="toggleFrokostSpørgsmål(this)">
+      <label for="nej">Nej</label>
+    </div>
+
+    <div id="frokost-spørgsmål" style="display:none;">
+      <label for="antal">Hvor mange personer?</label>
+      <input type="number" id="antal" name="antal" min="1" max="10">
+    </div>
+  </form>
+
+  <p id="standplacering">Ønske om standplacering? Klik på farven</p>
+
+  <form class="radio-form">
+    <div class="radio-item">
+      <input type="radio" id="red" name="svar" value="Red">
+      <label for="red" class="color-box" style="background-color: #f898a8;"></label>
+    </div>
+    <div class="radio-item">
+      <input type="radio" id="blue" name="svar" value="Blue">
+      <label for="blue" class="color-box" style="background-color: #103461;"></label>
+    </div>
+    <div class="radio-item">
+      <input type="radio" id="green" name="svar" value="Green">
+      <label for="green" class="color-box" style="background-color: #4678b6;"></label>
+    </div>
+    <div class="radio-item">
+      <input type="radio" id="gray" name="svar" value="Gray">
+      <label for="gray" class="color-box" style="background-color: #8692b0;"></label>
+    </div>
+    <div class="radio-item">
+      <input type="radio" id="pink" name="svar" value="Pink">
+      <label for="pink" class="color-box" style="background-color: #e8445f;"></label>
+    </div>
+    <img src="fotos/køge.png" alt="Icon" class="icon"> <!-- Billedet uden for radio items -->
+  </form>
+
+  <p id="strøm">Har de brug for strøm?</p>
+
+  <form class="radio-formm">
+    <div class="radio-itemm">
+      <input type="radio" id="jaa" name="svarr" value="Jaa" onclick="toggleFrokostSpørgsmål(this)">
+      <label for="jaa">Ja</label>
+    </div>
+    <div class="radio-itemm">
+      <input type="radio" id="nejj" name="svarr" value="Nejj" onclick="toggleFrokostSpørgsmål(this)">
+      <label for="nejj">Nej</label>
+    </div>
+  </form>
+
+  <form>
+    <label class="farve" for="beskriv">Beskriv din stand:</label><br>
+    <input type="text" id="beskriv" name="vname" class="fælles"><br>
+
+    <label class="farve" for="aktivitet">Beskriv aktiviteten/aktiviteterne:</label><br>
+    <input type="text" id="aktivitet" name="kontakt" class="fælles"><br>
+  </form>
+
+  <button id="afstand type="button id="gemKnapp">Gem</button>
+</form>
+
+
+
+
+</body>
+</html>
