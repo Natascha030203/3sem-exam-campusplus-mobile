@@ -139,6 +139,19 @@ button:hover {
 /* -------------------------*/
 
 
+#logindd{
+    background-color: #8692b0;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
 #opret{
     text-decoration: none;
     margin-left: 60px;
@@ -812,5 +825,15 @@ input[type="radio"]:checked + label {
 
 #afstand{
     padding-bottom: 40vw;
+}
+
+.row5{
+    color: #103461;
+    left: 0;
+    width: 100%; /* Strækker sig over hele bredden */
+    display: flex; /* Arranger elementerne i en række */
+    justify-content: space-around; /* Giver jævn fordeling mellem billeder */
+    padding: 10px 0; /* Tilføjer lidt afstand omkring billederne */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Giver en skygge-effekt */
 }
 
