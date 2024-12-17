@@ -3,10 +3,16 @@ document.querySelector('.signup-form').addEventListener('submit', function(event
     const repeatPassword = document.querySelector('input[name="gentag-kode"]').value;
 
     if (password !== repeatPassword) {
-    event.preventDefault();
-    alert('Adgangskoderne matcher ikke!');
-}
+        event.preventDefault();
+        alert('Adgangskoderne matcher ikke!');
+    } else {
+        // Find link og klik det
+        document.getElementById('redirect-link').click();
+    }
+    window.location.assign('homepage.html');
 });
+
+
 
 
 function indlosBilletten() {
@@ -20,7 +26,7 @@ function indlosBilletten() {
 
 
 
-// When the user clicks on the button, toggle between hiding and showing the dropdown content
+
 function myFunction(zoneIndex) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     for (var i = 0; i < dropdowns.length; i++) {
@@ -32,7 +38,7 @@ function myFunction(zoneIndex) {
     }
 }
 
-// Close the dropdown menu if the user clicks outside of it
+
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");

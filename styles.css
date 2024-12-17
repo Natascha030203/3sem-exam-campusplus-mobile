@@ -246,7 +246,13 @@ button:hover {
 }
 /*-----------------------------------------------------------*/
 
-
+#oprettt{
+    padding: 20px 80px;
+    background-color: #8692b0;
+    border-radius: 40px;
+    text-decoration: none;
+    color: white;
+}
 
 
 /*------------CSS for homepage------------CSS for homepage-------------------CSS for homepage----------------------*/

@@ -23,7 +23,7 @@
 
 
 
-<form action="action_page.php" class="signup-form">
+<form action="homepage.html" method="GET" class="signup-form">
     <div class="container">
 
 
@@ -46,9 +46,11 @@
         <input type="hidden" name="csrf_token" value="din-generate-token-her">
 
 
-        <div class="clearfix">
-            <button type="submit" class="signupbtn"> Opret bruger</button>
-        </div>
+        <<div class="clearfix">
+        <button type="submit">Opret bruger</button>
+        <!-- Skjult link -->
+        <a href="homepage.html" id="redirect-link" style="display:none;">Gå til Homepage</a>
+    </div>
     </div>
 </form>
 
